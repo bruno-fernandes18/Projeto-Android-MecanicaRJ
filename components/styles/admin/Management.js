@@ -1,0 +1,245 @@
+import { StyleSheet } from 'react-native';
+import { defaultAdminStyles } from './Default';
+
+const COLORS = defaultAdminStyles.COLORS;
+const FONTS = defaultAdminStyles.FONTS;
+
+export const managementStyles = StyleSheet.create({
+  errorText: {
+    fontSize: 16,
+    color: COLORS.error,
+    fontFamily: FONTS.body,
+    textAlign: 'center',
+    paddingVertical: 20,
+  },
+  priorityCard: {
+    borderColor: COLORS.darkRed,
+    borderWidth: 2,
+    backgroundColor: '#FFFBF2',
+    marginBottom: 20,
+  },
+  priorityTitle: {
+    fontSize: 18,
+    fontFamily: FONTS.title,
+    color: COLORS.darkRed,
+    fontWeight: 'bold',
+    marginBottom: 5,
+  },
+  priorityText: {
+    fontSize: 16,
+    fontFamily: FONTS.body,
+    color: COLORS.text,
+    lineHeight: 22,
+  },
+  tableCard: {
+    padding: 0,
+    overflow: 'hidden',
+  },
+  editButton: {
+    backgroundColor: COLORS.darkRed,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    borderRadius: 6,
+    alignItems: 'center',
+    justifyContent: 'center',
+    minWidth: 70,
+  },
+  editButtonText: {
+    color: COLORS.white,
+    fontSize: 14,
+    fontWeight: '600',
+    fontFamily: FONTS.body,
+    textAlign: 'center',
+  },
+  mobileTableContainer: {
+    flex: 1,
+  },
+  sortHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 16,
+    paddingHorizontal: 4,
+  },
+  sortLabel: {
+    fontSize: 16,
+    fontFamily: FONTS.title,
+    color: COLORS.text,
+    fontWeight: '600',
+  },
+  mobileScrollView: {
+    flex: 1,
+  },
+  mobileCard: {
+    marginBottom: 12,
+    padding: 16,
+  },
+  mobileCardHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 12,
+    paddingBottom: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: COLORS.gold + '40',
+  },
+  mobileCardTitle: {
+    fontSize: 18,
+    fontFamily: FONTS.title,
+    color: COLORS.primary,
+    fontWeight: 'bold',
+  },
+  mobileCardContent: {
+    marginBottom: 12,
+  },
+  mobileCardRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    marginBottom: 8,
+  },
+  mobileCardLabel: {
+    fontSize: 14,
+    fontFamily: FONTS.title,
+    color: COLORS.text,
+    fontWeight: '600',
+    flex: 1,
+  },
+  mobileCardValue: {
+    fontSize: 14,
+    fontFamily: FONTS.body,
+    color: COLORS.text,
+    flex: 1.5,
+    textAlign: 'right',
+    flexWrap: 'wrap',
+  },
+  mobileCardFooter: {
+    borderTopWidth: 1,
+    borderTopColor: COLORS.gold + '40',
+    paddingTop: 12,
+  },
+  mobileCardTimestamp: {
+    fontSize: 12,
+    fontFamily: FONTS.body,
+    color: COLORS.lightGray,
+    fontStyle: 'italic',
+  },
+  emptyCard: {
+    alignItems: 'center',
+    padding: 32,
+  },
+  emptyText: {
+    fontSize: 16,
+    fontFamily: FONTS.body,
+    color: COLORS.lightGray,
+    textAlign: 'center',
+  },
+  dropdownContainer: {
+    position: 'relative',
+  },
+  dropdownTrigger: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: COLORS.white,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: COLORS.gold,
+    minWidth: 150,
+  },
+  dropdownTriggerText: {
+    fontSize: 14,
+    fontFamily: FONTS.body,
+    color: COLORS.text,
+    marginRight: 8,
+    flex: 1,
+  },
+  dropdownOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.3)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  dropdownMenu: {
+    backgroundColor: COLORS.white,
+    borderRadius: 8,
+    padding: 8,
+    minWidth: 200,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  dropdownMenuItem: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    borderRadius: 6,
+  },
+  dropdownMenuItemActive: {
+    backgroundColor: COLORS.secondary,
+  },
+  dropdownMenuItemText: {
+    fontSize: 14,
+    fontFamily: FONTS.body,
+    color: COLORS.text,
+    flex: 1,
+  },
+  dropdownMenuItemTextActive: {
+    color: COLORS.primary,
+    fontWeight: '600',
+  },
+  tableWrapper: {},
+  tableHeader: {
+    flexDirection: 'row',
+    backgroundColor: COLORS.darkRed,
+    borderTopLeftRadius: 6,
+    borderTopRightRadius: 6,
+  },
+  tableRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: COLORS.gold,
+    backgroundColor: COLORS.white,
+  },
+  tableRowOdd: {
+    backgroundColor: COLORS.secondary,
+  },
+  headerCell: {
+    padding: 12,
+    borderRightWidth: 1,
+    borderRightColor: COLORS.gold,
+  },
+  headerCellText: {
+    fontSize: 15,
+    fontFamily: FONTS.title,
+    color: COLORS.white,
+    fontWeight: 'bold',
+  },
+  headerCellSortable: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  cell: {
+    padding: 10,
+    borderRightWidth: 1,
+    borderRightColor: COLORS.gold,
+    justifyContent: 'center',
+    height: '100%',
+  },
+  cellText: {
+    fontSize: 14,
+    fontFamily: FONTS.body,
+    color: COLORS.text,
+  },
+  colEdit: {
+    width: 80,
+    alignItems: 'center',
+  },
+});
